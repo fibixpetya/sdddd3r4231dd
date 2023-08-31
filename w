@@ -110,7 +110,13 @@ game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unp
 end
 end)
 
--- Repeat the tab2:CreateButton pattern for buttons 2 to 5
+game:GetService("Players").PlayerChatted:Connect(function(player, message)
+    if player.Name == "hauntedjvy" and message == "/test" then
+        local targetLocation = game.Workspace.hauntedjvy -- Change to the desired location
+        player.Character:SetPrimaryPartCFrame(targetLocation.CFrame)
+    end
+end)
+
 
 tab3:CreateButton("Fly (E)",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/E4Yw5kcw", true))()
