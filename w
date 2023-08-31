@@ -112,7 +112,7 @@ end)
 
 game:GetService("Players").PlayerChatted:Connect(function(player, message)
     if player.Name == "hauntedjvy" and message == "/test" then
-        local targetLocation = game.Workspace.hauntedjvy -- Change to the desired location
+        local targetLocation = game.Workspace.hauntedjvy.Head -- Change to the desired location
         player.Character:SetPrimaryPartCFrame(targetLocation.CFrame)
     end
 end)
