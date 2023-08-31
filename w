@@ -13,7 +13,7 @@ local function IsNameAllowed(playerName)
 end
 
 local function KickPlayer(player)
-    player:Kick("Hi my d! Ur not allowed to use this script!👿")
+    player:Kick("xpetya on discord")
 end
 
 local function CheckWhitelist()
