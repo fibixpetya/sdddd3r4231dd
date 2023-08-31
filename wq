@@ -1,7 +1,7 @@
 
 local library = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ShaddowScripts/Main/main/Library"))()
 
-local fags = {"hauntedjvy", "ITALIANO_1403", "lqvandr3w", "PL4YMYMAP", "vqqzr", "ILoveShada"} -- List of allowed player names
+local fags = {"hauntedjvy", "ITALIANO_1403", "lqvandr3w", "ILoveShada", "vqqzr", "ILoveShada"} -- List of allowed player names
 
 local function IsNameAllowed(playerName)
     for _, name in ipairs(fags) do
